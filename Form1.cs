@@ -11,7 +11,7 @@ namespace abstract_Buoi8
         {
             SinhVienIT sinhVienIT = new SinhVienIT();
             sinhVienIT.diemjava = double.Parse(txt_diemjava.Text);
-            sinhVienIT.diemcss = double.Parse(txt_diemcss.Text + " " + sinhVienIT.xeploai());
+            sinhVienIT.diemcss = double.Parse(txt_diemcss.Text);
 
             MessageBox.Show(sinhVienIT.getdiemtb().ToString());
 
@@ -23,7 +23,7 @@ namespace abstract_Buoi8
             SinhVienBiz sinhvienbiz = new SinhVienBiz();
             sinhvienbiz.ketoan = double.Parse(txt_Ketoan.Text);
             sinhvienbiz.Maketting = double.Parse(txt_maketting.Text);
-            sinhvienbiz.Banhang = double.Parse(txt_banhang.Text + " " +sinhvienbiz.xeploai());
+            sinhvienbiz.Banhang = double.Parse(txt_banhang.Text );
 
             MessageBox.Show(sinhvienbiz.getdiemtb().ToString());
         }
